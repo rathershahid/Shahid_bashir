@@ -211,7 +211,7 @@ button{
     padding: 10px 22px;
 }
 .bt{
-    width:auto;
+    width:8%;
     margin: auto;
     align-items: center;
 }
@@ -228,6 +228,7 @@ button{
 }
 #w3review{
     padding: 13px;
+    align-items: center;
 }
 .content{
     background-color: black;
