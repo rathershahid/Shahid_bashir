@@ -9,7 +9,7 @@
   /* HSL color mode */
   --hue-color: 224;
   --first-color: hsl(var(--hue-color), 89%, 60%);
-  --second-color: hsl(var(--hue-color), 56%, 12%);
+  --second-color: hsl(var(--hue-color), 100%, 100%);
   /*===== Fuente y tipografia =====*/
   --body-font: "Poppins", sans-serif;
   --big-font-size: 2rem;
@@ -44,6 +44,7 @@ html {
 }
 
 body {
+  background-color: black;
   margin: var(--header-height) 0 0 0;
   font-family: var(--body-font);
   font-size: var(--normal-font-size);
@@ -110,12 +111,14 @@ img {
   top: 0;
   left: 0;
   z-index: var(--z-fixed);
-  background-color: #fff;
+  background-color: black;
   box-shadow: 0 1px 4px rgba(146, 161, 176, 0.15);
+  /* box-shadow:  0 4px 4px rgba(442, 209, 253, 0.19);  */
 }
 
 /*===== NAV =====*/
 .nav {
+  
   height: var(--header-height);
   display: flex;
   justify-content: space-between;
@@ -201,7 +204,7 @@ img {
 .home__social-icon {
   width: max-content;
   margin-bottom: var(--mb-2);
-  font-size: 1.5rem;
+  font-size: 1.8rem;
   color: var(--second-color);
 }
 .home__social-icon:hover {
@@ -344,7 +347,7 @@ img {
 
 /* ===== FOOTER =====*/
 .footer {
-  background-color: var(--second-color);
+  background-color: black;
   color: #fff;
   text-align: center;
   font-weight: var(--font-semi);
@@ -355,15 +358,32 @@ img {
   margin-bottom: var(--mb-4);
 }
 .footer__social {
-  margin-bottom: var(--mb-4);
+  padding-top: 20px;
+  box-shadow:0 -1px 0px rgb(181 181 181 / 19%); 
 }
 .footer__icon {
-  font-size: 1.5rem;
+  font-size: 30px;
   color: #fff;
   margin: 0 var(--mb-2);
 }
 .footer__copy {
   font-size: var(--smaller-font-size);
+}
+.instagram:hover{
+  /* color: yellow; */
+ color: rgb(228, 64, 95);
+}
+.snapchat:hover{
+  /* color: yellow; */
+ color: #FFFC00;
+}
+.linkedin:hover{
+  /* color: yellow; */
+ color: #0A66C2;
+}
+.git:hover{
+  /* color: yellow; */
+ color:#2dba4e;
 }
 
 /* ===== MEDIA QUERIES=====*/
